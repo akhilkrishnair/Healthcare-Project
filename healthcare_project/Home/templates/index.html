@@ -1,18 +1,15 @@
-{% extends 'base.html' %}
-{% block title %}Home{% endblock %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% block title %}Home{% endblock %} {% load static %} {% block content %}
 
-<div  class="container">
-    <div class="interact appointment">
-        <a href="{% url 'appointment' %}"><h3> Make an Appointment</h3></a>
-    </div>
-    <div class="interact doctors">
-         <a href="{% url 'doctors' %}"><h3> Our Doctors</h3></a>
-    </div>
-    <div class="interact departments">
-        <a href="{% url 'departments' %}"><h3> Our Departments</h3></a>
-    </div>
+<div class="container">
+    <a class="interact appointment" href="{% url 'appointment' %}">
+        <h3>Make an Appointment</h3>
+    </a>
+    <a class="interact doctors" href="{% url 'doctors' %}">
+        <h3>Our Doctors</h3>
+    </a>
+    <a class="interact departments" href="{% url 'departments' %}">
+        <h3>Our Departments</h3>
+    </a>
 </div>
 
 {% endblock %}
