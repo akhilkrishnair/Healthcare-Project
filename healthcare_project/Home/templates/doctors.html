@@ -9,7 +9,7 @@
     {% for doc in doctors %}
     <div class="profile">
         <div class="image">
-            <img src="{{ doc.image.url }}" alt="doc.name">
+            <img src="{{ doc.image.url }}" alt="{{doc.name}}">
         </div>
         <div class="details">
             <h3>{{doc.name}}</h3>

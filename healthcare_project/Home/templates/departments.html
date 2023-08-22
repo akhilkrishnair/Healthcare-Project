@@ -3,6 +3,18 @@
 {% load static %}
 {% block content %}
 
-<h1>Departments page</h1>
+<h1 class="dep-title">Departments page</h1>
+<hr>
+<div class="department-container">
+    {% for dep in departments %}
+    <div class="department-details">
+        <h2>{{dep.name}}</h2>
+        <div class="description">
+            {{dep.description}}
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
 
 {% endblock %}

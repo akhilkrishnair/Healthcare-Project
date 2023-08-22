@@ -26,4 +26,5 @@ def doctors(request):
 
 
 def departments(request):
-    return render(request, 'departments.html')
+    departments = Departments.objects.all()
+    return render(request, 'departments.html', {'departments':departments})
