@@ -16,13 +16,15 @@
     height: 80px;
     border-radius: 14px;
     background-color: rgb(8, 8, 160);
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     letter-spacing: .5px;
     transition: 0.4s;
     cursor: pointer;
+}
+.interact a h3{
+    color: white;
 }
 
 .interact:hover{
