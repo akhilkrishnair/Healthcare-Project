@@ -14,14 +14,13 @@
 
     <header>
         <div class="title">
-            <h1>Global Hospital</h1>
+            <a href="{% url 'home' %}"><h1>Global Hospital</h1></a>
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Enquery</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'enquery' %}">Enquery</a></li>
 
             </ul>
         </div>

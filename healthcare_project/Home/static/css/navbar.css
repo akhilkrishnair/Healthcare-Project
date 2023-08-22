@@ -16,6 +16,8 @@ header{
 }
 .title h1{
     letter-spacing: .5px;
+    color: white;
+
 }
 
 .nav-links, .nav-links ul {
@@ -28,11 +30,12 @@ header{
 
 
 .nav-links ul li a{
-    border-radius: 5px;
+    margin: 0 5px;
+    border-radius: 14px;
     padding: 9px 13px;
     color: rgb(255, 255, 255);
     letter-spacing: .5px;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 .nav-links ul li a:hover{

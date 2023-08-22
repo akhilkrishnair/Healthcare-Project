@@ -21,6 +21,12 @@
     justify-content: center;
     align-items: center;
     letter-spacing: .5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.interact:hover{
+    background-color: rgb(29, 29, 245);
 }
 
 
