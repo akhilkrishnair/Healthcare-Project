@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Departments,Doctors
 
 
 def index(request):
@@ -21,7 +21,8 @@ def appointment(request):
 
 
 def doctors(request):
-    return render(request, 'doctors.html')
+    doctors = Doctors.objects.all()
+    return render(request, 'doctors.html',{'doctors':doctors})
 
 
 def departments(request):

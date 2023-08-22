@@ -3,6 +3,20 @@
 {% load static %}
 {% block content %}
 
-<h1>Doctors page</h1>
+<h1 class="our-doctor">Our Doctors</h1>
+<hr>
+<div class="doctor-container">
+    {% for doc in doctors %}
+    <div class="profile">
+        <div class="image">
+            <img src="{{ doc.image.url }}" alt="doc.name">
+        </div>
+        <div class="details">
+            <h3>{{doc.name}}</h3>
+            <h5>{{doc.department}}</h5>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
 {% endblock %}
