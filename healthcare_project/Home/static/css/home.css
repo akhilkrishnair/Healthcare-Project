@@ -23,7 +23,7 @@
     letter-spacing: .5px;
     transition: 0.4s;
     cursor: pointer;
-    box-shadow: 0 0 15px 3px rgb(77, 76, 76) ;
+    box-shadow: 0 0 15px 3px rgb(242, 238, 238) ;
 }
 
 .container a{
@@ -39,5 +39,6 @@
 .interact:hover{
     background-color: rgb(29, 29, 245);
 }
+
 
 

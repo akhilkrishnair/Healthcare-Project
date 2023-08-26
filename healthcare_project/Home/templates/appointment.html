@@ -1,8 +1,47 @@
-{% extends 'base.html' %}
-{% block title %}Home{% endblock %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% block title %}Appointment{% endblock %} {% load static %} {% block content %}
 
-<h1>Appointment page</h1>
+<h1 class="appointment-title">Appointment page</h1>
+
+<div class="appointment-container">
+    <form method="post">
+        {% csrf_token %}
+        <div class="input-area">
+            <label for="patientname">Patient Name</label><br>
+            <input  id="patientname" type="text" name="patientname" placeholder="Patient name" />
+        </div>
+        <div class="input-area">
+            <label for="patientphone">Patient Phone</label><br>
+            <input id="patientphone" type="number" name="patientphone" placeholder="Patient phone" />
+        </div>
+        <div class="input-area">
+            <label for="patientemail">Patient Email</label><br>
+            <input id="patientemail" type="email" name="patientemail" placeholder="Patient email" />
+        </div>
+        <div class="input-area">
+            <label for="patientage">Patient Age</label><br>
+            <input id="patientage" type="number" name="patientage" placeholder="Patient age" />
+        </div>
+
+        <div class="input-area">
+
+            <label for="doctor-option">Select Doctor</label><br>
+            <select name="select-doctor" id="doctor-option">
+                {% for doc in doctors_list %}
+                  <option id="doctor-option" value="{{doc.id}}">{{doc.name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+
+        <div class="input-area">
+            <label for="appointmentdate">Select Date</label><br>
+            <input id="appointmentdate" type="date" name="appointmentdate" placeholder="Date" />
+        </div>
+
+        <div class="submit">
+            <button>Make Appiontment</button>
+        </div>
+    </form>
+</div>
 
 {% endblock %}

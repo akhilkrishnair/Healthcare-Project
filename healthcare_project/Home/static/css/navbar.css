@@ -43,3 +43,25 @@ header{
       color: rgb(7, 110, 16);
 }
 
+.message{
+    position: absolute;
+    top: 105px;
+    left: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    background-color: deeppink;
+    border-radius: 10px;
+    font-size: 23px;
+    color: white;
+    letter-spacing: .6px;}
+
+.message button{
+    margin-top: 15px;
+    padding: 9px 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
